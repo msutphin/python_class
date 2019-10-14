@@ -14,3 +14,6 @@ device = {
   
   output = net_connect.send_command("show lldp neighbors detail")
   print(output)
+
+  output = net_connect.send_command("show lldp neighbors detail", delay_factor=8)
+  print(output)
