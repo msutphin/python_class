@@ -23,13 +23,22 @@ cfg = [
 ]
 
 output = net_connect.send_config_set(cfg)
+print()
+print("#" * 80)
+print("CFG Change: ")
 print(output)
+print("#" * 80)
+print()
 
-output = net_connect.send_command('ping google.com')
-print(output)
+ping_output = net_connect.send_command('ping google.com')
+
+if "!!" in ping_output:
+    print("Ping Successful:")
+    print("\n\nPing Output: {}\n\n".format(ping_output))
+else:
+    raise ValueError("\n\nPing Failed: {}\n\n".format(ping_output))
 
 net_connect.disconnect()
-
 end_time = datetime.now()
 
 print("Total Execution Time: {}\n".format(end_time - start_time))
