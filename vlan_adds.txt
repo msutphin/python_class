@@ -1,0 +1,15 @@
+vlan 100
+name VLAN-100
+exit
+vlan 200
+name VLAN-200
+exit
+vlan 300
+name VLAN-300
+exit
+vlan 400
+name VLAN-400
+exit
+vlan 500
+name VLAN-500
+exit
