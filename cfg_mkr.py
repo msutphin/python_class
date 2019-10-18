@@ -8,7 +8,7 @@ device1 = {
   "username": 'pyclass',
   "password": password,
   "device_type": 'cisco_nxos_ssh',
-#  "fast_cli": True,
+# "fast_cli": True,
 }
 
 device2 = {
@@ -16,7 +16,7 @@ device2 = {
     "username": 'pyclass',
     "password": password,
     "device_type": 'cisco_nxos_ssh',
-#    "fast_cli": True,
+  # "fast_cli": True,
 }
 
 net_connect = ConnectHandler(**device1)
